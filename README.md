@@ -92,8 +92,8 @@ challenges/tradeoffs that might be involved.
 
 In practice, we have obtained several billion de-identified DICOMs from the partner.
 They are stored in several million "text" and "image" tar archives that are
-similar in shape to the sample data from question 1, but much bigger - up to
-several petabytes in total.
+similar in shape to the sample data from question 1, but much bigger. The total
+data volume across all archives is several petabytes.
 
 The archives are currently stored in Amazon S3 Glacier awaiting further processing.
 To be able to use these DICOMs for model training, they will need to be re-assembled
@@ -106,6 +106,9 @@ Provide a design document for a data-processing pipeline that can re-assemble th
 DICOMs at scale and make the resulting `.dcm` files available as objects in
 an S3 bucket. The system will need to run in Amazon AWS, and you're encouraged
 to be specific about technology choices.
+
+Please commit the design document and any supporting material, diagrams, etc to the
+github repository as part of your submission.
 
 There's no one right answer here, and some parts of the problem are deliberately
 under-specified. The aim is for you to demonstrate how you'd approach the problem,
