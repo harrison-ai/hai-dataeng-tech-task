@@ -81,7 +81,7 @@ locate the corresponding files in the tar archives, and re-assemble them to prod
 an output file named `2.25.32906972551432148964768.dcm`.
 
 
-## Question Two: Now do it a billion times
+## Question Two: Now let's do it a billion times
 
 This is a system-design task, which will be explored together in more detail
 as part of the second interview. There's no one right answer here - we're mainly
