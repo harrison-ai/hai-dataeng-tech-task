@@ -51,7 +51,8 @@ If you're curious what these files look like in practice, try opening the result
 
 This is a small coding task, which we expect should take no more than an hour or two
 of your time. It's a chance for you to demonstrate your familiarity with Python,
-and an opportunity to familiarise yourself with the data model for the second question.
+but more importantly, it's opportunity to familiarise yourself with the data model
+for the second question.
 
 ---
 
@@ -76,7 +77,7 @@ For example:
   named `2.25.32906972551432148964768.j2c` in the image archives.
 
 Your script should be able to accept `2.25.32906972551432148964768` as a command-line argument,
-locate the corresponding files in the tar archives, and re-assembe them to produce
+locate the corresponding files in the tar archives, and re-assemble them to produce
 an output file named `2.25.32906972551432148964768.dcm`.
 
 
@@ -106,5 +107,6 @@ DICOMs at scale and make the resulting `.dcm` files available as objects in
 an S3 bucket. The system will need to run in Amazon AWS, and you're encouraged
 to be specific about technology choices.
 
-Remember, there's no one right answer here. The aim is to have something that
-we can discuss together and expand on in a follow-up interview.
+There's no one right answer here, and some parts of the problem are deliberately
+under-specified. The aim is for you to demonstrate how you'd approach the problem,
+and to have something that we can discuss together and expand on in a follow-up interview.
