@@ -7,11 +7,11 @@ import pydicom
 def reassemble_dicom(headers: Dict[str, Any], pixel_data: bytes) -> bytes:
     """Reassemble a DICOM from its headers and image data.
 
-    The resulting DICOM is returned as bytes, read to be e.g.
+    The resulting DICOM is returned as bytes; to be e.g.
     written out to a file.
     """
     # In reality there's a lot more nuance to it than this,
-    # but these basic will do for the purposes of the exercise.
+    # but this basic reassembly will do for the purposes of the exercise.
     dcm = pydicom.Dataset.from_json(headers)
     dcm.is_little_endian = True
     dcm.is_implicit_VR = False
