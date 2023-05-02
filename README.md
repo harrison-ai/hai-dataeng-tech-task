@@ -4,7 +4,7 @@ This is a data-focussed technical assessment task for Software Engineering roles
 It consists of two parts: a coding exercise, and a design exercise.
 
 You should take a copy of this repo, add your solutions for each part, and push them to GitHub for review and discussion in a follow-up interview.
-You're welcome to use a private repository, as long as it is visible to the following users:
+You're welcome to use a private repository, as long as it's visible to the following users:
 
 * @rfk
 * @oliverdaff
@@ -16,7 +16,7 @@ You're welcome to use a private repository, as long as it is visible to the foll
 
 Digital Imaging and Communications in Medicine (DICOM) is a standard format for sharing medical image information.
 As a world-leading medical AI company, we work with DICOM *a lot*.
-This tech task is a simplified version of a real data-processing task that the team has faced.
+This tech task is a simplified version of a real data-processing task the team has faced.
 
 Don't worry, you don't need to be familar with DICOM in order to complete the task!
 
@@ -51,15 +51,15 @@ If you're curious what these files look like in practice, try opening the result
 
 This is a small coding task, which we expect should take no more than an hour or two
 of your time. It's a chance for you to demonstrate your familiarity with Python,
-but more importantly, it's opportunity to familiarise yourself with the data model
+but more importantly, it's an opportunity to familiarise yourself with the data model
 for the second question.
 
 ---
 
 We have obtained some DICOM data from a partner and want to use it for AI model training.
-The partner's systems store DICOMs as separate header and image files,
-and these files have been processed turing transfer in order to remove identifying information.
-The result is data spread across two separate sets of tar archives:
+The partner's systems store DICOMs as separate header and image files; after the files have
+been processed to remove any identifying information, the result is data spread across two
+separate sets of tar archives:
 
 * The "text" archives in `./data/text/` contain de-identified DICOM header data
 * The "image" archives in `./data/images/` contain de-identified DICOM image data
@@ -95,7 +95,7 @@ They are stored in several million "text" and "image" tar archives that are
 similar in shape to the sample data from question 1, but much bigger. The total
 data volume across all archives is several petabytes.
 
-The archives are currently stored in Amazon S3 Glacier awaiting further processing.
+The archives are currently stored in Amazon S3 Glacier Flexible Retrieval awaiting further processing.
 To be able to use these DICOMs for model training, they will need to be re-assembled
 and made available in a separate S3 bucket.
 
@@ -112,4 +112,4 @@ github repository as part of your submission.
 
 There's no one right answer here, and some parts of the problem are deliberately
 under-specified. The aim is for you to demonstrate how you'd approach the problem,
-and to have something that we can discuss together and expand on in a follow-up interview.
+and to have something we can discuss together, and expand on, in a follow-up interview.
