@@ -58,7 +58,7 @@ for the second question.
 
 We have obtained some DICOM data from a partner and want to use it for AI model training.
 The partner's systems store DICOMs as separate header and image files; after the files have
-been process to remove any identifying information, the result is data spread across two
+been processed to remove any identifying information, the result is data spread across two
 separate sets of tar archives:
 
 * The "text" archives in `./data/text/` contain de-identified DICOM header data
