@@ -1,6 +1,15 @@
 """
+reassemble_dicom_from_sop_uid.py
+
 Description:
-Receive a single dicom sop uid, retrieve the corresponding header & pixel information from a directory of tars, then reassemble & save the dicom.
+    Receive a single DICOM SOP UID, retrieve the corresponding header & pixel information
+    from a directory of TARs, then reassemble & save the DICOM in a folder.
+
+Usage:
+    python reassemble_dicom_from_sop_uid.py --sop_uid="2.25.62586069727293726820489"
+
+Requirements:
+    - reassemble_dicom helper function from reassemble_dicom.py
 """
 
 import argparse
@@ -59,8 +68,9 @@ if __name__ == "__main__":
     sop_uid = get_sop_uid_from_cli()
     dicom_bytes = reassemble_dicom_from_sop_uid(sop_uid)
 
+    # Make an output folder if it doesn't exist
     out_dir.mkdir(exist_ok=True)
+    
     output_path = out_dir / f"{sop_uid}.dcm"
-
     with output_path.open("wb") as f:
         f.write(dicom_bytes)
