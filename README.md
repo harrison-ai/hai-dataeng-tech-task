@@ -7,9 +7,10 @@ You should take a copy of this repo, add your solutions for each part, and push 
 You're welcome to use a private repository, as long as it's visible to the following users:
 
 * @rfk
-* @oliverdaff
 * @timlesie
-* @comozo
+* @oliverdaff
+* @TanyaSrinidhi
+* @suzy-hai
 * @daniellohrey-hai
 
 ## Background: DICOM
