@@ -81,6 +81,8 @@ Your script should be able to accept `2.25.32906972551432148964768` as a command
 locate the corresponding files in the tar archives, and re-assemble them to produce
 an output file named `2.25.32906972551432148964768.dcm`.
 
+Your script should be written in Python, and may use third-party dependencies if desired.
+
 
 ## Question Two: Now let's do it a billion times
 
